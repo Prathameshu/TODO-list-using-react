@@ -34,7 +34,7 @@ if(Maintask.length>0){
       
 
       <div className='flex justify-between mb-5'>
-      <h5 className='text-xl font-semibold text-2xl'>{t.title}</h5>
+      <h5 className=' font-semibold text-2xl'>{t.title}</h5>
       <h6 className='text-xl font-semibold'>{t.desc}</h6>
       <button onClick={()=>{
       completeHandler(i)
@@ -57,7 +57,7 @@ if(Maintask.length>0){
    
     <form onSubmit={submitHandler}> 
       <input type='text'
-       className='text-green m-3 bg-transparent border-emerald-400 p-3 mt-8 w-2/5' 
+       className='text-blue m-3 p-3 text-lg w-2/5 text-black' 
        placeholder='Enter Your Task' 
        value={title}
        onChange={(e)=>{
@@ -65,7 +65,7 @@ if(Maintask.length>0){
        }} 
        />
       <input type='text'  
-      className='text-blue m-3 p-3 text-lg text-green-950 w-2/5' placeholder='Enter Task Description' 
+      className='text-blue m-3 p-3 text-lg w-2/5 text-black' placeholder='Enter Task Description' 
       value={desc}
       onChange={(e)=>{
         setdesc(e.target.value)
@@ -74,7 +74,7 @@ if(Maintask.length>0){
        
       <button className=' text-white bg-lime-950 p-2 rounded-lg'>Submit Task</button>
     </form>
-    <div className='p-8 bg-slate-200'>
+    <div className='p-8 bg-slate-200 text-black' >
       {renderTask}
     </div>
     </>
